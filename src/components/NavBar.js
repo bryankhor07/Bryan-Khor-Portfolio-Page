@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { DribbbleIcon, GithubIcon, LinkedInIcon } from "./Icons";
+import { InstagramIcon, GithubIcon, LinkedInIcon } from "./Icons";
 import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -53,13 +53,13 @@ const NavBar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://www.instagram.com/ja_crispy7__/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 ml-3"
         >
-          <DribbbleIcon />
+          <InstagramIcon />
         </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
