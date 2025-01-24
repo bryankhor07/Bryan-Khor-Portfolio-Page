@@ -26,6 +26,8 @@ export default function Home() {
                 src={ProfilePic}
                 alt="Bryan Khor"
                 className="w-full h-auto rounded-full"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               ></Image>
             </div>
             <div className="w-1/2 ml-20 flex flex-col items-center self-center">
