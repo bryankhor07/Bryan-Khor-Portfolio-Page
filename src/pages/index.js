@@ -7,7 +7,6 @@ import AnimatedText from "@/components/AnimatedText";
 import ProfilePic from "../../public/images/profile/BryanProfilePic.png";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
-import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -68,9 +67,6 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={LightBulb} alt="Bryan Khor" className="w-full h-auto" />
-        </div>
       </main>
     </>
   );
