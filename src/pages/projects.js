@@ -10,6 +10,7 @@ import OnlineRecipeApp from "../../public/images/projects/Recipe.ioHomePage.png"
 import WeatherApp from "../../public/images/projects/WeatherAppPhoto.png";
 import Tenzies from "../../public/images/projects/TenziesApp.png";
 import ExpenseTracker from "../../public/images/projects/ExpenseTrackerPhoto.png";
+import CampTraveler from "../../public/images/projects/CampTravelerPhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -194,6 +195,19 @@ const Projects = () => {
                 img={ExpenseTracker}
                 link="https://expense-tracker-c3464.web.app/"
                 github="https://github.com/bryankhor07/expense-tracker"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Project"
+                title="Camp Traveler"
+                summary="The Camp Traveler application is a travel UI/UX app designed for campers, 
+                built using Next.js, React, Tailwind CSS, TypeScript, and PostCSS. Tailwind CSS is 
+                used for styling, and the app aims to enhance the camping experience by providing features 
+                like offline maps, adventure scheduling, and augmented reality guides."
+                img={CampTraveler}
+                link="https://camp-traveler-website.vercel.app/"
+                github="https://github.com/bryankhor07/camp-traveler-website"
               />
             </div>
           </div>
