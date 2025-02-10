@@ -11,6 +11,7 @@ import WeatherApp from "../../public/images/projects/WeatherAppPhoto.png";
 import Tenzies from "../../public/images/projects/TenziesApp.png";
 import ExpenseTracker from "../../public/images/projects/ExpenseTrackerPhoto.png";
 import CampTraveler from "../../public/images/projects/CampTravelerPhoto.png";
+import Hired from "../../public/images/projects/HiredLandingPagePhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -208,6 +209,21 @@ const Projects = () => {
                 img={CampTraveler}
                 link="https://camp-traveler-website.vercel.app/"
                 github="https://github.com/bryankhor07/camp-traveler-website"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Project"
+                title="Hired"
+                summary="Hired is a job search platform designed to seamlessly connect job seekers with 
+                their ideal career opportunities while helping employers find top talent. Built with React, 
+                Tailwind CSS, ShadCN UI, and JavaScript, the application offers a sleek and modern user 
+                experience. The backend, powered by Supabase and Clerk, ensures secure authentication and 
+                efficient data management. Hired prioritizes a user-friendly experience, making job 
+                searching and hiring more intuitive and effective for everyone."
+                img={Hired}
+                link="https://hired-lime-sigma.vercel.app/"
+                github="https://github.com/bryankhor07/Job-Portal"
               />
             </div>
           </div>
