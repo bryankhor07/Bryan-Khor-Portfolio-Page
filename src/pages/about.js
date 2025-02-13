@@ -7,7 +7,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import React, { useRef, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import ProfilePic from "../../public/images/profile/BryanProfilePic.png";
+import ProfilePic from "../../public/images/profile/BryanProfilePic.jpg";
 import { useMotionValue, useInView, useSpring, motion } from "framer-motion";
 
 const AnimatedNumbers = ({ value }) => {
