@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
-import ProfilePic from "../../public/images/profile/BryanProfilePic.JPG";
+import ProfilePic from "../../public/images/profile/BryanProfilePic.png";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
