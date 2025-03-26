@@ -12,6 +12,7 @@ import Tenzies from "../../public/images/projects/TenziesApp.png";
 import ExpenseTracker from "../../public/images/projects/ExpenseTrackerPhoto.png";
 import CampTraveler from "../../public/images/projects/CampTravelerPhoto.png";
 import Hired from "../../public/images/projects/HiredLandingPagePhoto.png";
+import QuickCart from "../../public/images/projects/QuickCartDashboardPage.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -224,6 +225,20 @@ const Projects = () => {
                 img={Hired}
                 link="https://hired-lime-sigma.vercel.app/"
                 github="https://github.com/bryankhor07/Job-Portal"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Quick Cart"
+                summary="QuickCart is a modern e-commerce platform designed for 
+                a seamless and user-friendly shopping experience. Built with React, 
+                HTML, and CSS, it features an intuitive interface for easy navigation. 
+                The backend, powered by Firebase, ensures secure authentication and 
+                efficient data management, making online shopping both convenient and reliable."
+                img={QuickCart}
+                link="https://quick-cart-blond.vercel.app/"
+                github="https://github.com/bryankhor07/Quick-Cart"
               />
             </div>
           </div>
