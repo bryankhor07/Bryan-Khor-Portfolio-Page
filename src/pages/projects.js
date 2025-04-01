@@ -13,6 +13,7 @@ import ExpenseTracker from "../../public/images/projects/ExpenseTrackerPhoto.png
 import CampTraveler from "../../public/images/projects/CampTravelerPhoto.png";
 import Hired from "../../public/images/projects/HiredLandingPagePhoto.png";
 import QuickCart from "../../public/images/projects/QuickCartDashboardPage.png";
+import HireReady from "../../public/images/projects/HireReadyPhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -152,7 +153,7 @@ const Projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Online Recipe Application"
+                title="Recipe.io"
                 summary="A recipe-sharing platform where users can explore, create, and
               favorite recipes. Features include dark mode, user ratings, user
               comments and a surprise recipe generator. Built using React,
@@ -189,7 +190,24 @@ const Projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
+                type="Project"
+                title="HireReady"
+                summary="HireReady is an AI-powered platform designed to help job seekers 
+                prepare for interviews. It offers a user-friendly interface that allows users 
+                to generate mock interviews, practice them, and receive AI-driven feedback to 
+                enhance their performance. Built with React, Tailwind CSS, and ShadCN UI, the 
+                application delivers a modern and responsive design. The backend, powered by 
+                Firebase, ensures secure authentication and efficient data management. Additionally, 
+                HireReady integrates Vapi and Google Gemini to provide realistic interview simulations 
+                and insightful feedback, making it a comprehensive tool for interview preparation."
+                img={HireReady}
+                link="https://hire-ready-iota.vercel.app/"
+                github="https://github.com/bryankhor07/Hire-Ready"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Project"
                 title="Expense Tracker"
                 summary="An expense tracker that allows users to add and delete expenses,
               as well as view the total balance. Developed with React and
@@ -197,19 +215,6 @@ const Projects = () => {
                 img={ExpenseTracker}
                 link="https://expense-tracker-c3464.web.app/"
                 github="https://github.com/bryankhor07/expense-tracker"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Project"
-                title="Camp Traveler"
-                summary="The Camp Traveler application is a travel UI/UX app designed for campers, 
-                built using Next.js, React, Tailwind CSS, TypeScript, and PostCSS. Tailwind CSS is 
-                used for styling, and the app aims to enhance the camping experience by providing features 
-                like offline maps, adventure scheduling, and augmented reality guides."
-                img={CampTraveler}
-                link="https://camp-traveler-website.vercel.app/"
-                github="https://github.com/bryankhor07/camp-traveler-website"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
