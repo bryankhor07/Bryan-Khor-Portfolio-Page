@@ -10,10 +10,14 @@ import OnlineRecipeApp from "../../public/images/projects/Recipe.ioHomePage.png"
 import WeatherApp from "../../public/images/projects/WeatherAppPhoto.png";
 import Tenzies from "../../public/images/projects/TenziesApp.png";
 import ExpenseTracker from "../../public/images/projects/ExpenseTrackerPhoto.png";
-import CampTraveler from "../../public/images/projects/CampTravelerPhoto.png";
 import Hired from "../../public/images/projects/HiredLandingPagePhoto.png";
 import QuickCart from "../../public/images/projects/QuickCartDashboardPage.png";
 import HireReady from "../../public/images/projects/HireReadyPhoto.png";
+import AppleFigmaDesign from "../../public/images/projects/AppleFigmaDesign.png";
+import GoogleFigmaDesign from "../../public/images/projects/GoogleFigmaDesign.png";
+import SentierFigmaDesign from "../../public/images/projects/SentierFigmaDesign.png";
+import ModernFoodPoster from "../../public/images/designs/ModernFoodPoster.png";
+import RestaurantFlyer from "../../public/images/designs/RestaurantFlyer.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -79,7 +83,62 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, summary, link, github }) => {
+  return (
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
+    border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
+      rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+      />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-72"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+      </Link>
+
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
+        </Link>
+        <div className="w-full mt-2 flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-lg font-semibold underline md:text-base"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8 md:w-6">
+            {" "}
+            <GithubIcon />{" "}
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const Design = ({ title, type, img, link }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
@@ -124,10 +183,6 @@ const Project = ({ title, type, img, link, github }) => {
           >
             Visit
           </Link>
-          <Link href={github} target="_blank" className="w-8 md:w-6">
-            {" "}
-            <GithubIcon />{" "}
-          </Link>
         </div>
       </div>
     </article>
@@ -152,7 +207,7 @@ const Projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
+                type="Full Stack Application"
                 title="Recipe.io"
                 summary="A recipe-sharing platform where users can explore, create, and
               favorite recipes. Features include dark mode, user ratings, user
@@ -166,7 +221,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Project"
+                type="Basic Project"
                 title="Weather App"
                 summary="A weather app that displays the current weather, temperature, and
               humidity for a specific city. Created with React and styled with
@@ -178,7 +233,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Project"
+                type="Basic Project"
                 title="Tenzies"
                 summary="A fun dice-rolling game where the goal is to match all the dice to
               the same number. Built with React for an interactive and
@@ -190,7 +245,7 @@ const Projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Project"
+                type="Full Stack Application"
                 title="HireReady"
                 summary="HireReady is an AI-powered platform designed to help job seekers 
                 prepare for interviews. It offers a user-friendly interface that allows users 
@@ -207,7 +262,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Project"
+                type="Full Stack Application"
                 title="Expense Tracker"
                 summary="An expense tracker that allows users to add and delete expenses,
               as well as view the total balance. Developed with React and
@@ -219,7 +274,7 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Project"
+                type="Full Stack Application"
                 title="Hired"
                 summary="Hired is a job search platform designed to seamlessly connect job seekers with 
                 their ideal career opportunities while helping employers find top talent. Built with React, 
@@ -234,7 +289,7 @@ const Projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
+                type="Full Stack Application"
                 title="Quick Cart"
                 summary="QuickCart is a modern e-commerce platform designed for 
                 a seamless and user-friendly shopping experience. Built with React, 
@@ -244,6 +299,55 @@ const Projects = () => {
                 img={QuickCart}
                 link="https://quick-cart-blond.vercel.app/"
                 github="https://github.com/bryankhor07/Quick-Cart"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Figma Design"
+                title="Apple Product Page"
+                summary="A Figma design of an Apple product page, showcasing a sleek and modern layout
+                with a focus on user experience and aesthetics."
+                img={AppleFigmaDesign}
+                link="https://www.figma.com/proto/CU5Txis70KJMsGYPWCFhcR/Apple-Home-Page?node-id=0-1&p=f&t=oCX0MPvQ5ufXZmSw-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3%3A3"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Figma Design"
+                title="Google Home Page"
+                summary="A Figma design of a Google home page, featuring a clean and minimalist design
+                that emphasizes functionality and user-friendliness."
+                img={GoogleFigmaDesign}
+                link="https://www.figma.com/proto/FCogSRzcB41vQVMxFWHCDn/Google-Home-Page---Netflix-Login-Screen?t=UMCZAwCPGvX0eonE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-5"
+                github=""
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Figma Design"
+                title="Sentier Website"
+                summary="A Figma design of the Sentier website, showcasing a modern and
+                responsive layout with a focus on visual appeal. Animations enhance the user experience, making it a dynamic and welcoming platform."
+                img={SentierFigmaDesign}
+                link="https://www.figma.com/proto/Flfak8N8RCGOGh7EGXvadt/Sentier-Website?node-id=10-19&p=f&t=18bR1QCCgUr0YXKb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A19"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Design
+                title="Modern Food Poster"
+                type="Canva Design"
+                img={ModernFoodPoster}
+                link="https://www.canva.com/design/DAGk3ExS8NI/bFeHfJ2gltBiLyccfMpRug/edit?utm_content=DAGk3ExS8NI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Design
+                title="Restaurant Flyer"
+                type="Canva Design"
+                img={RestaurantFlyer}
+                link="https://www.canva.com/design/DAGk6PbM5Gk/600j32MbABv0_j0R44tOwg/edit?utm_content=DAGk6PbM5Gk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               />
             </div>
           </div>
