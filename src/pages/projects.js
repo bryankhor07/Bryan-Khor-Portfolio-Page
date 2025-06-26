@@ -21,6 +21,7 @@ import RestaurantFlyer from "../../public/images/designs/RestaurantFlyer.png";
 import TwoTreesFigmaDesign from "../../public/images/projects/TwoTreesFigmaDesign.png";
 import SurveyFigmaDesign from "../../public/images/projects/SurveyFigmaDesign.png";
 import DownloadButtonFigmaDesign from "../../public/images/projects/DownloadButtonFigmaDesign.png";
+import InstagramProfileFigmaDesign from "../../public/images/projects/InstagramProfileFigmaDesign.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -383,6 +384,17 @@ const Projects = () => {
                 that emphasizes functionality and user experience. It focuses on Figma's use of components and interactions to create a dynamic and interactive design."
                 img={DownloadButtonFigmaDesign}
                 link="https://www.figma.com/proto/tM54YWQyuaFsf8cPPosmXV/03_03?t=NZOkZwKncW5NsrVb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-38"
+                github=""
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Figma Design"
+                title="Instagram Profile"
+                summary="A Figma design of an Instagram profile, featuring a clean and
+                modern layout with a focus on user experience. It showcases Figma's use of components and interactions to create a dynamic and interactive design."
+                img={InstagramProfileFigmaDesign}
+                link="https://www.figma.com/proto/Rg3lctlqP7PlXWXP4fPr2r/Instagram-Profile-Page?node-id=1-5&p=f&t=fKjrDSduDQAn7n1h-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5"
                 github=""
               />
             </div>
