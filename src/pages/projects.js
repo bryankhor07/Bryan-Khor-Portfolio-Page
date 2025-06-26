@@ -18,6 +18,9 @@ import GoogleFigmaDesign from "../../public/images/projects/GoogleFigmaDesign.pn
 import SentierFigmaDesign from "../../public/images/projects/SentierFigmaDesign.png";
 import ModernFoodPoster from "../../public/images/designs/ModernFoodPoster.png";
 import RestaurantFlyer from "../../public/images/designs/RestaurantFlyer.png";
+import TwoTreesFigmaDesign from "../../public/images/projects/TwoTreesFigmaDesign.png";
+import SurveyFigmaDesign from "../../public/images/projects/SurveyFigmaDesign.png";
+import DownloadButtonFigmaDesign from "../../public/images/projects/DownloadButtonFigmaDesign.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -348,6 +351,39 @@ const Projects = () => {
                 type="Canva Design"
                 img={RestaurantFlyer}
                 link="https://www.canva.com/design/DAGk6PbM5Gk/600j32MbABv0_j0R44tOwg/edit?utm_content=DAGk6PbM5Gk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Figma Design"
+                title="Two Trees"
+                summary="A Figma design of the Two Trees website, featuring a clean and
+                modern layout with a focus on user experience. It focuses on Figma's use of variables and conditional logic to create a dynamic and interactive design."
+                img={TwoTreesFigmaDesign}
+                link="https://www.figma.com/proto/GGWb52HY9OFvWTNvKolwE0/Two-Trees?node-id=95-48&p=f&t=a2qKfO5jNupV9Kmj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=95%3A18"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Figma Design"
+                title="Survey Form"
+                summary="A Figma design of a survey form, showcasing a clean and
+                user-friendly layout that emphasizes ease of use and accessibility. It focuses on Figma's use of components and interactions to create a dynamic and interactive design."
+                img={SurveyFigmaDesign}
+                link="https://www.figma.com/proto/77FtcOx76mT64mImt1wB2Q/03_05?node-id=1-60&t=fDNqxZSpQqkhENDj-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Figma Design"
+                title="Download Button"
+                summary="A Figma design of a download button, showcasing a sleek and modern design
+                that emphasizes functionality and user experience. It focuses on Figma's use of components and interactions to create a dynamic and interactive design."
+                img={DownloadButtonFigmaDesign}
+                link="https://www.figma.com/proto/tM54YWQyuaFsf8cPPosmXV/03_03?t=NZOkZwKncW5NsrVb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-38"
+                github=""
               />
             </div>
           </div>
