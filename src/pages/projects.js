@@ -212,15 +212,15 @@ const Projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Full Stack Application"
-                title="Recipe.io"
-                summary="A recipe-sharing platform where users can explore, create, and
-              favorite recipes. Features include dark mode, user ratings, user
-              comments and a surprise recipe generator. Built using React,
-              Firebase, and Cloud Firestore to deliver a dynamic and
-              user-friendly experience."
-                img={OnlineRecipeApp}
-                link="https://online-recipe-19b1d.web.app/"
-                github="https://github.com/bryankhor07/online-recipe-web-app"
+                title="Quick Cart"
+                summary="QuickCart is a modern e-commerce platform designed for 
+                a seamless and user-friendly shopping experience. Built with React, 
+                HTML, and CSS, it features an intuitive interface for easy navigation. 
+                The backend, powered by Firebase, ensures secure authentication and 
+                efficient data management, making online shopping both convenient and reliable."
+                img={QuickCart}
+                link="https://quick-cart-blond.vercel.app/"
+                github="https://github.com/bryankhor07/Quick-Cart"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -294,15 +294,15 @@ const Projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 type="Full Stack Application"
-                title="Quick Cart"
-                summary="QuickCart is a modern e-commerce platform designed for 
-                a seamless and user-friendly shopping experience. Built with React, 
-                HTML, and CSS, it features an intuitive interface for easy navigation. 
-                The backend, powered by Firebase, ensures secure authentication and 
-                efficient data management, making online shopping both convenient and reliable."
-                img={QuickCart}
-                link="https://quick-cart-blond.vercel.app/"
-                github="https://github.com/bryankhor07/Quick-Cart"
+                title="Recipe.io"
+                summary="A recipe-sharing platform where users can explore, create, and
+              favorite recipes. Features include dark mode, user ratings, user
+              comments and a surprise recipe generator. Built using React,
+              Firebase, and Cloud Firestore to deliver a dynamic and
+              user-friendly experience."
+                img={OnlineRecipeApp}
+                link="https://online-recipe-19b1d.web.app/"
+                github="https://github.com/bryankhor07/online-recipe-web-app"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
