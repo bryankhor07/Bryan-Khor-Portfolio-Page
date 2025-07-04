@@ -22,6 +22,7 @@ import TwoTreesFigmaDesign from "../../public/images/projects/TwoTreesFigmaDesig
 import SurveyFigmaDesign from "../../public/images/projects/SurveyFigmaDesign.png";
 import DownloadButtonFigmaDesign from "../../public/images/projects/DownloadButtonFigmaDesign.png";
 import InstagramProfileFigmaDesign from "../../public/images/projects/InstagramProfileFigmaDesign.png";
+import ValorantFigmaDesign from "../../public/images/projects/ValorantFigmaDesign.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -319,22 +320,21 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Figma Design"
-                title="Google Home Page"
-                summary="A Figma design of a Google home page, featuring a clean and minimalist design
-                that emphasizes functionality and user-friendliness."
-                img={GoogleFigmaDesign}
-                link="https://www.figma.com/proto/FCogSRzcB41vQVMxFWHCDn/Google-Home-Page---Netflix-Login-Screen?t=UMCZAwCPGvX0eonE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-5"
+                title="Sentier Website"
+                summary="A Figma design of the Sentier website, showcasing a modern and
+                responsive layout with a focus on visual appeal. Animations enhance the user experience, making it a dynamic and welcoming platform."
+                img={SentierFigmaDesign}
+                link="https://www.figma.com/proto/Flfak8N8RCGOGh7EGXvadt/Sentier-Website?node-id=10-19&p=f&t=18bR1QCCgUr0YXKb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A19"
                 github=""
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Figma Design"
-                title="Sentier Website"
-                summary="A Figma design of the Sentier website, showcasing a modern and
-                responsive layout with a focus on visual appeal. Animations enhance the user experience, making it a dynamic and welcoming platform."
-                img={SentierFigmaDesign}
-                link="https://www.figma.com/proto/Flfak8N8RCGOGh7EGXvadt/Sentier-Website?node-id=10-19&p=f&t=18bR1QCCgUr0YXKb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A19"
+                title="Valorant Guide"
+                summary="A Figma design of Valorant Guide that includes agents, weapons, and maps. It features a clean and modern layout with a focus on user experience and accessibility. The design incorporates Figma's use of components and interactions to create a dynamic and interactive design."
+                img={ValorantFigmaDesign}
+                link="https://www.figma.com/proto/sZARqBsTKmEfQpE7If0Q0W/Valorant-Agents-Guide?node-id=15-383&p=f&t=XXdykZZSFy924amV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A383"
                 github=""
               />
             </div>
