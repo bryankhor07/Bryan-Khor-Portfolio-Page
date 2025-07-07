@@ -23,6 +23,7 @@ import SurveyFigmaDesign from "../../public/images/projects/SurveyFigmaDesign.pn
 import DownloadButtonFigmaDesign from "../../public/images/projects/DownloadButtonFigmaDesign.png";
 import InstagramProfileFigmaDesign from "../../public/images/projects/InstagramProfileFigmaDesign.png";
 import ValorantFigmaDesign from "../../public/images/projects/ValorantFigmaDesign.png";
+import QuickCartFigmaDesign from "../../public/images/projects/QuickCartFigmaDesign.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -338,30 +339,13 @@ const Projects = () => {
                 github=""
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Design
-                title="Modern Food Poster"
-                type="Canva Design"
-                img={ModernFoodPoster}
-                link="https://www.canva.com/design/DAGk3ExS8NI/bFeHfJ2gltBiLyccfMpRug/edit?utm_content=DAGk3ExS8NI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Design
-                title="Restaurant Flyer"
-                type="Canva Design"
-                img={RestaurantFlyer}
-                link="https://www.canva.com/design/DAGk6PbM5Gk/600j32MbABv0_j0R44tOwg/edit?utm_content=DAGk6PbM5Gk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-              />
-            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Figma Design"
-                title="Two Trees"
-                summary="A Figma design of the Two Trees website, featuring a clean and
-                modern layout with a focus on user experience. It focuses on Figma's use of variables and conditional logic to create a dynamic and interactive design."
-                img={TwoTreesFigmaDesign}
-                link="https://www.figma.com/proto/GGWb52HY9OFvWTNvKolwE0/Two-Trees?node-id=95-48&p=f&t=a2qKfO5jNupV9Kmj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=95%3A18"
+                title="Quick Cart"
+                summary="A clean, user-friendly design for Quick Cart, focused on simplicity, accessibility, and seamless interactions. This prototype leverages Figma components, auto layout, and interactive elements to create a dynamic, intuitive shopping experience."
+                img={QuickCartFigmaDesign}
+                link="https://www.figma.com/proto/rvAL2KQEW3NRwMWlFnOQR0/Quick-Cart?node-id=1-46&p=f&t=z55PDbh3DdOuvif6-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A46"
                 github=""
               />
             </div>
@@ -379,11 +363,11 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Figma Design"
-                title="Download Button"
-                summary="A Figma design of a download button, showcasing a sleek and modern design
-                that emphasizes functionality and user experience. It focuses on Figma's use of components and interactions to create a dynamic and interactive design."
-                img={DownloadButtonFigmaDesign}
-                link="https://www.figma.com/proto/tM54YWQyuaFsf8cPPosmXV/03_03?t=NZOkZwKncW5NsrVb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-38"
+                title="Two Trees"
+                summary="A Figma design of the Two Trees website, featuring a clean and
+                modern layout with a focus on user experience. It focuses on Figma's use of variables and conditional logic to create a dynamic and interactive design."
+                img={TwoTreesFigmaDesign}
+                link="https://www.figma.com/proto/GGWb52HY9OFvWTNvKolwE0/Two-Trees?node-id=95-48&p=f&t=a2qKfO5jNupV9Kmj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=95%3A18"
                 github=""
               />
             </div>
