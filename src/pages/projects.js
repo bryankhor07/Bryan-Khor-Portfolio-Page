@@ -14,16 +14,17 @@ import Hired from "../../public/images/projects/HiredLandingPagePhoto.png";
 import QuickCart from "../../public/images/projects/QuickCartDashboardPage.png";
 import HireReady from "../../public/images/projects/HireReadyPhoto.png";
 import AppleFigmaDesign from "../../public/images/projects/AppleFigmaDesign.png";
-import GoogleFigmaDesign from "../../public/images/projects/GoogleFigmaDesign.png";
 import SentierFigmaDesign from "../../public/images/projects/SentierFigmaDesign.png";
-import ModernFoodPoster from "../../public/images/designs/ModernFoodPoster.png";
-import RestaurantFlyer from "../../public/images/designs/RestaurantFlyer.png";
 import TwoTreesFigmaDesign from "../../public/images/projects/TwoTreesFigmaDesign.png";
 import SurveyFigmaDesign from "../../public/images/projects/SurveyFigmaDesign.png";
-import DownloadButtonFigmaDesign from "../../public/images/projects/DownloadButtonFigmaDesign.png";
 import InstagramProfileFigmaDesign from "../../public/images/projects/InstagramProfileFigmaDesign.png";
 import ValorantFigmaDesign from "../../public/images/projects/ValorantFigmaDesign.png";
 import QuickCartFigmaDesign from "../../public/images/projects/QuickCartFigmaDesign.png";
+import CustomerSupportTicketTracker from "../../public/images/projects/CustomerSupportTicketTracker.png";
+import InventoryManagementSystem from "../../public/images/projects/InventoryManagementSystem.png";
+import EmployeeLeaveTracker from "../../public/images/projects/EmployeeLeaveTracker.png";
+import ExpenseTrackerExcel from "../../public/images/projects/ExpenseTracker.png";
+import SalesCommissionTracker from "../../public/images/projects/SalesCommissionTracker.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -379,6 +380,56 @@ const Projects = () => {
                 modern layout with a focus on user experience. It showcases Figma's use of components and interactions to create a dynamic and interactive design."
                 img={InstagramProfileFigmaDesign}
                 link="https://www.figma.com/proto/Rg3lctlqP7PlXWXP4fPr2r/Instagram-Profile-Page?node-id=1-5&p=f&t=fKjrDSduDQAn7n1h-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Excel"
+                title="Customer Support Ticket Tracker"
+                summary="Developed a system to track support tickets by agent, category, and resolution time, complete with filters and KPI dashboards."
+                img={CustomerSupportTicketTracker}
+                link="https://1drv.ms/x/c/1938dfbf8bd9052a/EWRO4ZpYcFJCv9KmCXkqDPAB1gmZ7kuhFxUM99BYy3GWiw?e=UX4oyU"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Excel"
+                title="Inventory Management System"
+                summary="Built a system to monitor inventory levels, calculate reorder needs, and visualize low-stock items using conditional formatting and charts."
+                img={InventoryManagementSystem}
+                link="https://1drv.ms/x/c/1938dfbf8bd9052a/EaMFVNNFsilDrr6nWidhHM0BemhSHIugZhXlLz5R18RUrw?e=tC5hsw"
+                github=""
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Excel"
+                title="Employee Leave Tracker"
+                summary="Developed a leave management system to track employee entitlements, leave usage, and current leave status across departments. Utilized SUMIFS to calculate total leave taken per employee and XLOOKUP to retrieve employee details. Applied conditional formatting to highlight employees currently on leave and created key performance indicators (KPIs) such as Total Employees, Days Taken, and Open Requests for at-a-glance insights."
+                img={EmployeeLeaveTracker}
+                link="https://1drv.ms/x/c/1938dfbf8bd9052a/EV0ZHakC9x1KrJQQJDoOA88BvehOaNYWWMaxlVXk5qDVwQ?e=d4pVfK"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Excel"
+                title="Expense Tracker"
+                summary="Built an automated tracker to compare actual spending against budget by category and visually flag over/under budget items."
+                img={ExpenseTrackerExcel}
+                link="https://1drv.ms/x/c/1938dfbf8bd9052a/EVZ90MZ5FSRPqytBaVi3V4UBr3Xm0EmKknF6VDV4HZvGmQ?e=LDlsSj"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Excel"
+                title="Sales Commission Tracker"
+                summary="Tracked sales rep performance and calculated earned commissions using tiered logic, pivot charts, and KPI summaries."
+                img={SalesCommissionTracker}
+                link="https://1drv.ms/x/c/1938dfbf8bd9052a/EffZuEsHrjBHgniIOl3HHJ8BKCWJkz-d2OlMKH-vgvfuwA?e=ugi4Sr"
                 github=""
               />
             </div>
