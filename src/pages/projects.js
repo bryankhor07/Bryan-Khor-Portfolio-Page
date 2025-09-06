@@ -25,6 +25,7 @@ import InventoryManagementSystem from "../../public/images/projects/InventoryMan
 import EmployeeLeaveTracker from "../../public/images/projects/EmployeeLeaveTracker.png";
 import ExpenseTrackerExcel from "../../public/images/projects/ExpenseTracker.png";
 import SalesCommissionTracker from "../../public/images/projects/SalesCommissionTracker.png";
+import MatchBoxPhoto from "../../public/images/projects/MatchBoxPhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -212,6 +213,16 @@ const Projects = () => {
           xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Full Stack Application"
+                title="MatchBox"
+                summary="MatchBox is a modern matchmaking web application built with Next.js, Supabase, and Stream. MatchBox enables users to create profiles, discover potential matches, chat in real-time, and even connect through live video calls."
+                img={MatchBoxPhoto}
+                link="https://match-box-7213.vercel.app/"
+                github="https://github.com/bryankhor07/Match-Box"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Full Stack Application"
