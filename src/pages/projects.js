@@ -26,6 +26,7 @@ import EmployeeLeaveTracker from "../../public/images/projects/EmployeeLeaveTrac
 import ExpenseTrackerExcel from "../../public/images/projects/ExpenseTracker.png";
 import SalesCommissionTracker from "../../public/images/projects/SalesCommissionTracker.png";
 import MatchBoxPhoto from "../../public/images/projects/MatchBoxPhoto.png";
+import OrganizeXPhoto from "../../public/images/projects/OrganizeXPhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -146,57 +147,6 @@ const Project = ({ title, type, img, summary, link, github }) => {
   );
 };
 
-const Design = ({ title, type, img, link }) => {
-  return (
-    <article
-      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-    border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4"
-    >
-      <div
-        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
-      rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
-      />
-      <Link
-        href={link}
-        target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
-      >
-        <FramerImage
-          src={img}
-          alt={title}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-        />
-      </Link>
-
-      <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
-          {type}
-        </span>
-        <Link
-          href={link}
-          target="_blank"
-          className="hover:underline underline-offset-2"
-        >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
-            {title}
-          </h2>
-        </Link>
-        <div className="w-full mt-2 flex items-center justify-between">
-          <Link
-            href={link}
-            target="_blank"
-            className="text-lg font-semibold underline md:text-base"
-          >
-            Visit
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
-};
-
 const Projects = () => {
   return (
     <>
@@ -221,6 +171,16 @@ const Projects = () => {
                 img={MatchBoxPhoto}
                 link="https://match-box-7213.vercel.app/"
                 github="https://github.com/bryankhor07/Match-Box"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Full Stack Application"
+                title="OrganizeX"
+                summary="OrganizeX is a modern task management and collaboration tool that helps you stay productive by organizing projects into boards, columns, and tasks. It’s built with Next.js for fast file-based routing, Supabase for real-time subscriptions and storage, and Clerk for authentication and subscription billing integration."
+                img={OrganizeXPhoto}
+                link="https://organize-x.vercel.app/"
+                github="https://github.com/bryankhor07/OrganizeX"
               />
             </div>
             <div className="col-span-12">
