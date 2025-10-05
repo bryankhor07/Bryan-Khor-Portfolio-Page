@@ -27,6 +27,8 @@ import ExpenseTrackerExcel from "../../public/images/projects/ExpenseTracker.png
 import SalesCommissionTracker from "../../public/images/projects/SalesCommissionTracker.png";
 import MatchBoxPhoto from "../../public/images/projects/MatchBoxPhoto.png";
 import OrganizeXPhoto from "../../public/images/projects/OrganizeXPhoto.png";
+import ClashRoyaleDeckBuilderPhoto from "../../public/images/projects/ClashRoyaleDeckBuilderPhoto.png";
+import MixologyPhoto from "../../public/images/projects/MixologyPhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -181,6 +183,26 @@ const Projects = () => {
                 img={OrganizeXPhoto}
                 link="https://organize-x.vercel.app/"
                 github="https://github.com/bryankhor07/OrganizeX"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Basic Project"
+                title="Clash Royale Deck Builder"
+                summary="A fun and interactive web app that generates random Clash Royale decks based on your chosen win condition, elixir constraints, and role-based balancing. Perfect for trying out new strategies, challenging friends, or escaping ladder boredom."
+                img={ClashRoyaleDeckBuilderPhoto}
+                link="https://clash-royale-deck-generator.vercel.app/"
+                github="https://github.com/bryankhor07/Clash-Royale-Deck-Generator"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Basic Project"
+                title="Mixology"
+                summary="Explore cocktails by name, ingredient, and category using the public CocktailDB API."
+                img={MixologyPhoto}
+                link="https://mixology-three.vercel.app/"
+                github="https://github.com/bryankhor07/Mixology"
               />
             </div>
             <div className="col-span-12">
