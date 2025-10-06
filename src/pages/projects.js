@@ -29,6 +29,8 @@ import MatchBoxPhoto from "../../public/images/projects/MatchBoxPhoto.png";
 import OrganizeXPhoto from "../../public/images/projects/OrganizeXPhoto.png";
 import ClashRoyaleDeckBuilderPhoto from "../../public/images/projects/ClashRoyaleDeckBuilderPhoto.png";
 import MixologyPhoto from "../../public/images/projects/MixologyPhoto.png";
+import MoodFlixPhoto from "../../public/images/projects/MoodFlixPhoto.png";
+import MarketPulsePhoto from "../../public/images/projects/MarketPulsePhoto.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -175,6 +177,26 @@ const Projects = () => {
                 github="https://github.com/bryankhor07/Match-Box"
               />
             </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Basic Project"
+                title="MarketPulse"
+                summary="A real-time financial dashboard displaying cryptocurrency and stock market data with interactive charts, watchlists, and price alerts."
+                img={MarketPulsePhoto}
+                link="https://market-pulse-chi.vercel.app/"
+                github="https://github.com/bryankhor07/MarketPulse"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Basic Project"
+                title="Mixology"
+                summary="Explore cocktails by name, ingredient, and category using the public CocktailDB API."
+                img={MixologyPhoto}
+                link="https://mood-flix-chi.vercel.app/"
+                github="https://github.com/bryankhor07/MoodFlix"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Full Stack Application"
@@ -188,19 +210,19 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Basic Project"
-                title="Clash Royale Deck Builder"
+                title="MarketPulse"
                 summary="A fun and interactive web app that generates random Clash Royale decks based on your chosen win condition, elixir constraints, and role-based balancing. Perfect for trying out new strategies, challenging friends, or escaping ladder boredom."
                 img={ClashRoyaleDeckBuilderPhoto}
-                link="https://clash-royale-deck-generator.vercel.app/"
-                github="https://github.com/bryankhor07/Clash-Royale-Deck-Generator"
+                link="https://market-pulse-chi.vercel.app/"
+                github="https://github.com/bryankhor07/MarketPulse"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Basic Project"
-                title="Mixology"
-                summary="Explore cocktails by name, ingredient, and category using the public CocktailDB API."
-                img={MixologyPhoto}
+                title="MoodFlix"
+                summary="MoodFlix is a modern web application that suggests movies based on your current mood. Whether you're feeling chill, hype, sad, or nostalgic, MoodFlix maps your emotions to curated movie recommendations powered by the OMDb API."
+                img={MoodFlixPhoto}
                 link="https://mixology-three.vercel.app/"
                 github="https://github.com/bryankhor07/Mixology"
               />
