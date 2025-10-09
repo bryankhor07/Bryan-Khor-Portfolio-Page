@@ -210,7 +210,7 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Basic Project"
-                title="MarketPulse"
+                title="Clash Royale Deck Builder"
                 summary="A fun and interactive web app that generates random Clash Royale decks based on your chosen win condition, elixir constraints, and role-based balancing. Perfect for trying out new strategies, challenging friends, or escaping ladder boredom."
                 img={ClashRoyaleDeckBuilderPhoto}
                 link="https://market-pulse-chi.vercel.app/"
