@@ -190,9 +190,9 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Basic Project"
-                title="Mixology"
-                summary="Explore cocktails by name, ingredient, and category using the public CocktailDB API."
-                img={MixologyPhoto}
+                title="MoodFlix"
+                summary="MoodFlix is a modern web application that suggests movies based on your current mood. Whether you're feeling chill, hype, sad, or nostalgic, MoodFlix maps your emotions to curated movie recommendations powered by the OMDb API."
+                img={MoodFlixPhoto}
                 link="https://mood-flix-chi.vercel.app/"
                 github="https://github.com/bryankhor07/MoodFlix"
               />
@@ -220,9 +220,9 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Basic Project"
-                title="MoodFlix"
-                summary="MoodFlix is a modern web application that suggests movies based on your current mood. Whether you're feeling chill, hype, sad, or nostalgic, MoodFlix maps your emotions to curated movie recommendations powered by the OMDb API."
-                img={MoodFlixPhoto}
+                title="Mixology"
+                summary="Explore cocktails by name, ingredient, and category using the public CocktailDB API."
+                img={MixologyPhoto}
                 link="https://mixology-three.vercel.app/"
                 github="https://github.com/bryankhor07/Mixology"
               />
