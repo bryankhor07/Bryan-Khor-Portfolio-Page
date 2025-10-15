@@ -160,7 +160,7 @@ const Certificates = () => {
   return (
     <>
       <Head>
-        <title>Bryan's Certificates</title>
+        <title>Bryan&apos;s Certificates</title>
         <meta
           name="description"
           content="Professional certifications and credentials"
